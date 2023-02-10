@@ -1,3 +1,9 @@
+mod mem;
+mod cpu;
+mod proc_stat;
+
+use cpu::Cpu;
+
 fn main() {
-    println!("Hello, world!");
+    let cpu = Cpu::new().reset();
 }
