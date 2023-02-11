@@ -8,6 +8,6 @@ use op_codes::*;
 
 fn main() {
     let mut cpu = Cpu::new().reset();
-    cpu.mem.mem[0xFFFC] = NOP;
+    cpu.mem.data[0xFFFC] = NOP;
     cpu.execute();
 }
