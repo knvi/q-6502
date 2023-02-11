@@ -1,4 +1,4 @@
-const MAX_MEM: usize = 1024 * 64;
+pub const MAX_MEM: usize = 1024 * 64;
 
 #[derive(Debug, Clone)]
 pub struct Memory {
